@@ -1,11 +1,15 @@
 
+//Inicio
 
+//Inicializando as variavéis globais
 const button = document.querySelector("button")
 const img = document.querySelector(".trash-image")
 const list = document.querySelector("#list")
 const x = document.querySelector(".cancel")
 const menssage = document.querySelector(".delete-alert") 
 
+
+//Começando o evento de adicinar item a lista
 button.addEventListener("click", ()=> {
     const div1 = document.createElement("div")
     const div2  = document.createElement("div")
@@ -57,6 +61,7 @@ button.addEventListener("click", ()=> {
     
 })
 
+//Evento de excluir itens da lista e aparecer mensagem 
 list.addEventListener("click", (event) => {
     if(event.target.classList.contains("trash-image")){
          const lisTarget = event.target.parentNode.parentNode
@@ -68,6 +73,7 @@ list.addEventListener("click", (event) => {
     }
 })
 
+//Excluir mensagem de aviso
 x.addEventListener("click", () =>{
     const warning = x.parentNode.parentNode
 
@@ -75,6 +81,8 @@ x.addEventListener("click", () =>{
 
 })
 
+
+//Delegando evento de clique no checkbox
 list.addEventListener("click", (event) => {
     if(event.target.classList.contains("checkbox")){
 
@@ -94,4 +102,6 @@ list.addEventListener("click", (event) => {
         }
     }
 })
+
+//Fim
 
