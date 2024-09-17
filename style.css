@@ -175,6 +175,21 @@ header + div{
                             
                         }
             }
+
+            &.trace{
+                & span{
+                    text-decoration: line-through;
+                    color: var(--content-tertiary);
+                }
+
+                & div:nth-child(1){
+                    &::before{
+                        background-image: url(imgs/assets/correct-click.svg);
+                        background-color: var(--color-brand);
+                        border: 2px solid var(--color-brand);
+                    }
+                }
+            }
         }
 
         & .trash{
@@ -183,6 +198,8 @@ header + div{
             
 
         }
+
+
     }
 
 

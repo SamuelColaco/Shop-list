@@ -103,5 +103,13 @@ list.addEventListener("click", (event) => {
     }
 })
 
+document.addEventListener("click", (event) => {
+
+    if(event.target.classList.contains("checkbox")){
+        const parent = event.target.parentNode.parentNode
+        parent.classList.toggle("trace")
+    }
+})
+
 //Fim
 
