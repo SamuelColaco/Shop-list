@@ -103,6 +103,7 @@ list.addEventListener("click", (event) => {
     }
 })
 
+//Delegando mudança no input checkbox ao clicar nele
 document.addEventListener("click", (event) => {
 
     if(event.target.classList.contains("checkbox")){
